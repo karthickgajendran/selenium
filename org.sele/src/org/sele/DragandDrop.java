@@ -27,8 +27,10 @@ public class DragandDrop {
 		WebElement source = driver.findElement(By.xpath("(//a[@class='button button-orange'])[6]"));
 
 		WebElement destini = driver.findElement(By.xpath("(//li[@class='placeholder'])[3]"));
-		
+
 		a.dragAndDrop(source, destini).perform();
+
+		driver.quit();
 	}
 
 }
